@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/food_spot
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 338641491734-4o9vp0qkv967fvha8fuv0osdrk08do30.apps.googleusercontent.com
+            client-secret: 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
+          github:
+            client-id: d4e2f9557a09f875bf20
+            client-secret: b634239bae57d52024b2a2cadf81039d5afc55cd
+
+gastro:
+  app:
+    frontendUrl: http://localhost:3000
+    jwtSecret: ====================FoodSpot====================
+    jwtRefreshTokenExpirationMs: 2629800000
+    jwtTokenExpirationMs: 604800017
+#   2 629 800 000 - month
+#   604 800 017 - week
+#   864 000 00 - day
+#   360 000 0 - hour
