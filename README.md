@@ -1,4 +1,4 @@
-# Food-Spot (Backend)
+# FoodSpot (Backend)
 A web application designed for filtering restaurants based on our preferences (dish, location, category), with the option to display them on a world map. We also provide the capability to add and manage these restaurants, as well as to rate them.
 
 ## Screenshots:
